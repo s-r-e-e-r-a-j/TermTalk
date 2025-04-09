@@ -23,17 +23,17 @@
 ```bash
 python3 server.py
 ```
-- Enter the IP to bind (e.g., 192.168.1.7)
+- Enter the IP to bind (e.g., 192.168.1.7) The ipaddress of your system 
 
 - Enter a port (e.g., 5000)
 
 - A public URL will be generated using Serveo (e.g., serveo.net:12345)
 
-  **2. On the Client**
+**2. On the Client**
 
-  ```bash
-  python3 client.py
-  ```
+```bash
+python3 client.py
+```
 - Enter the Host (e.g., serveo.net)
 
 - Enter the Port (e.g., 12345)
