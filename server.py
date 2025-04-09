@@ -94,7 +94,7 @@ def start_chat_server(ip, port):
 def main():
     os.system("clear" if os.name == "posix" else "cls");
     banner();
-    bind_ip = input(f"{WHITE}Enter IP to bind to (e.g. 0.0.0.0 or 127.0.0.1): {RESET}").strip()
+    bind_ip = input(f"{WHITE}Enter IP to bind to [your IP] (e.g. 192.168.1.7): {RESET}").strip()
     port = int(input(f"{WHITE}Enter port to use (e.g. 5000): {RESET}"))
 
     threading.Thread(target=start_serveo_forwarding, args=(bind_ip, port), daemon=True).start()
