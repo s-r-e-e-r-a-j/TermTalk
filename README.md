@@ -49,7 +49,7 @@ python3 client.py
 **Server Output:**
 
 ```css
-[+] Serveo Public URL:serveo.net:12345
+[+] Serveo Public URL:serveo.net:12345  Use this in client: Host: serveo.net Port:12345
 ```
 
 **Client Input:**
