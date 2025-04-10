@@ -9,6 +9,7 @@
 - Colored banner and messages for a cool terminal vibe
 - Lightweight and easy to use
 - Supports Linux and Termux 
+-**Messages are sent and received only by the clients. The server acts solely as an intermediary to route messages between clients.**
 
 ## Requirements
 - Python 3.x
