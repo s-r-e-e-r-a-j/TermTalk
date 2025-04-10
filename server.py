@@ -2,6 +2,7 @@ import socket
 import threading
 import subprocess
 import os
+import sys
 
 # ANSI Colors
 GREEN = "\033[92m"
@@ -104,6 +105,8 @@ def main():
         start_chat_server(bind_ip,port)
 
     except KeyboardInterrupt:
-                             print("Exiting")
+            print("\nExiting...")
+            sys.exit(0)
+        
 if __name__ == "__main__":
     main()
