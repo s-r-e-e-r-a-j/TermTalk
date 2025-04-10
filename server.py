@@ -92,15 +92,18 @@ def start_chat_server(ip, port):
         threading.Thread(target=handle_client, args=(client,), daemon=True).start()
 
 def main():
-    os.system("clear" if os.name == "posix" else "cls");
-    banner();
-    bind_ip = input(f"{WHITE}Enter IP to bind to [your IP] (e.g. 192.168.1.7): {RESET}").strip()
-    port = int(input(f"{WHITE}Enter port to use (e.g. 5000): {RESET}"))
+    try:
+        os.system("clear" if os.name == "posix" else "cls");
+        banner();
+        bind_ip = input(f"{WHITE}Enter IP to bind to [your IP] (e.g. 192.168.1.7): {RESET}").strip()
+        port = int(input(f"{WHITE}Enter port to use (e.g. 5000): {RESET}"))
 
-    threading.Thread(target=start_serveo_forwarding, args=(bind_ip, port), daemon=True).start()
+        threading.Thread(target=start_serveo_forwarding, args=(bind_ip, port), daemon=True).start()
 
-    print(f"{GREEN}[*] Starting chat server...{RESET}\n")
-    start_chat_server(bind_ip,port)
+        print(f"{GREEN}[*] Starting chat server...{RESET}\n")
+        start_chat_server(bind_ip,port)
 
+    except KeyboardInterrupt:
+                             print("Exiting")
 if __name__ == "__main__":
     main()
