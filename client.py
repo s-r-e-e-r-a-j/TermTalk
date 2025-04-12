@@ -37,11 +37,13 @@ def connect_to_server(host, port, name):
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             sock.connect((host, port))
             print("[+] Connected to chat server.")
+            sock.send(f"{name} joined the chat".encode())
             threading.Thread(target=receive_messages, args=(sock,), daemon=True).start()
 
             while True:
                 msg = input()
                 if msg.lower() == "exit":
+                    sock.send(f"{name} exited from the chat".encode())
                     sock.close()
                     return
                 sock.send(f"{name}: {msg}".encode())
