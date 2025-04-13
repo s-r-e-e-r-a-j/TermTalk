@@ -69,7 +69,7 @@ def broadcast(message, sender):
 def handle_client(client):
     while True:
         try:
-            message = client.recv(1024)
+            message = client.recv(3024)
             if not message:
                 break
             broadcast(message, client)
