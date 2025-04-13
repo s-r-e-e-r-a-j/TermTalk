@@ -22,7 +22,7 @@ def banner():
 def receive_messages(sock):
     while True:
         try:
-            msg = sock.recv(3024).decode()
+            msg = sock.recv(2048).decode()
             if not msg:
                 raise ConnectionError
             print(msg)
