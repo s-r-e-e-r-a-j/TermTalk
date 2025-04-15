@@ -42,7 +42,7 @@ python3 server.py
 - Enter the IP to bind (e.g., 192.168.1.7) The ipaddress of your system 
 
 - Enter a port (e.g., 5000)
-
+- Enter a secret key (eg., mykey1234)
 - A public URL will be generated using Serveo (e.g., serveo.net:12345)
 
 **2. On the Client**
