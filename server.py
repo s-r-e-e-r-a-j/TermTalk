@@ -88,15 +88,23 @@ def broadcast(message, sender):
 def handle_client(client):
     while True:
         try:
-            message = client.recv(2048)
-            if not message:
+            enc_message = client.recv(2048)
+            if not enc_message:
                 break
-            broadcast(message, client)
+            decrypted_msg = decrypt_message(enc_message.decode())
+            if decrypted_msg == "[!] Decryption Failed":
+                client.send(encrypt_message("[!] Invalid Secret Key. Connection closing...").encode())
+                clients.remove(client)
+                client.close()
+                break
+            # Re-encrypt before broadcasting
+            broadcast(encrypt_message(decrypted_msg).encode(), client)
         except:
             if client in clients:
                 clients.remove(client)
             client.close()
             break
+
 
 def start_chat_server(ip, port):
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
