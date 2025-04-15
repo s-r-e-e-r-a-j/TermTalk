@@ -8,15 +8,30 @@
 - Automatic reconnection support for clients
 - Colored banner and messages for a cool terminal vibe
 - Lightweight and easy to use
-- Supports Linux and Termux 
+- Supports Linux and Termux
+- All messages are secured with strong AES encryption, ensuring privacy.
 - **Messages are sent and received only by the clients. The server acts solely as an intermediary to route messages between clients.**
 
-## Requirements
-- Python 3.x
-- OpenSSH (for Serveo tunnel)
-- Internet connection
-- Linux or Termux (Android terminal emulator)
+## 🛠️ Requirements
 
+- **Python 3.x**  
+  Make sure Python 3 is installed on your system.
+  
+- **OpenSSH**  
+  Required for Serveo tunnel to establish remote connections.
+
+- **Internet Connection**  
+  Required to use Serveo and for general network communication between clients and servers.
+
+- **Linux or Termux**  
+  Works on various Linux distributions (e.g., Kali Linux, Parrot OS, Ubuntu) and Termux (for Android).
+
+- **PyCryptodome**  
+  Required for AES encryption support. Install it using:
+  
+  ```bash
+  pip3 install pycryptodome
+  ```
 ## How to Use
 
 **1. On the Server**
