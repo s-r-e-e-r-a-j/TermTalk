@@ -57,6 +57,8 @@ python3 client.py
 - Enter the Host (e.g., serveo.net)
 
 - Enter the Port (e.g., 12345)
+  
+- Enter The Secret Key (e.g., MyKey1234)
 
 - Enter your nickname
 
@@ -76,6 +78,7 @@ python3 client.py
 ```yaml
 Enter HOST: serveo.net
 Enter Server Port: 12345
+Enter The Secret Key (e.g., MyKey1234): MyKey1234
 Your nickname: allah
 ```
 
