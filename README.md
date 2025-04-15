@@ -42,7 +42,7 @@ python3 server.py
 - Enter the IP to bind (e.g., 192.168.1.7) The ipaddress of your system 
 
 - Enter a port (e.g., 5000)
-- Enter a secret key (eg., mykey1234)
+- Enter a secret key (eg., MyKey1234)
 - Once the server is running, you'll see the following connection information:
 ```css
 [+] Use this in client: Host: serveo.net Port: 47056 Secret Key: MyKey1234
