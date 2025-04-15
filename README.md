@@ -43,7 +43,11 @@ python3 server.py
 
 - Enter a port (e.g., 5000)
 - Enter a secret key (eg., mykey1234)
-- A public URL will be generated using Serveo (e.g., serveo.net:12345)
+- Once the server is running, you'll see the following connection information:
+```css
+Use this in client: Host: serveo.net Port: 47056 Secret Key: MyKey1234
+```
+This provides the **Host**, **Port**, and **Secret Key** needed for clients to connect securely.
 
 **2. On the Client**
 
