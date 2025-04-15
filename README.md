@@ -45,7 +45,7 @@ python3 server.py
 - Enter a secret key (eg., mykey1234)
 - Once the server is running, you'll see the following connection information:
 ```css
-Use this in client: Host: serveo.net Port: 47056 Secret Key: MyKey1234
+[+] Use this in client: Host: serveo.net Port: 47056 Secret Key: MyKey1234
 ```
 This provides the **Host**, **Port**, and **Secret Key** needed for clients to connect securely.
 
@@ -68,7 +68,7 @@ python3 client.py
 **Server Output:**
 
 ```css
-[+] Serveo Public URL:serveo.net:12345  Use this in client: Host: serveo.net Port:12345
+[+] Use this in client: Host: serveo.net Port: 47056 Secret Key: MyKey1234
 ```
 
 **Client Input:**
