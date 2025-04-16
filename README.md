@@ -12,7 +12,7 @@
 - All messages are secured with strong AES encryption, ensuring privacy.
 - **Messages are sent and received only by the clients. The server acts solely as an intermediary to route messages between clients.**
 
-## 🛠️ Requirements
+## Requirements
 
 - **Python 3.x**  
   Make sure Python 3 is installed on your system.
