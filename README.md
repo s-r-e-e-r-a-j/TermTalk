@@ -6,7 +6,6 @@
 - Simple terminal interface
 - Works over the internet using Serveo.net tunneling
 - Automatic reconnection support for clients
-- Colored banner and messages for a cool terminal vibe
 - Lightweight and easy to use
 - Supports Linux and Termux
 - All messages are secured with strong AES encryption, ensuring privacy.
