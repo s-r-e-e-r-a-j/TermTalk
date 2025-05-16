@@ -31,7 +31,8 @@ def decrypt_message(enc_message):
         return "[!] Decryption Failed"
 
 def banner():
-    print("""\033[92m
+    print("\033[92m")
+    print("""
        _______               _______    _ _    
       |__   __|             |__   __|  | | |   
          | | ___ _ __ _ __ ___ | | __ _| | | __
@@ -41,10 +42,10 @@ def banner():
                            
   
                             Developer: Sreeraj
-
-      GitHub:https://github.com/s-r-e-e-r-a-j 
-      \033[0m""")
-
+ 
+           """)
+    print("\033[92m GitHub : https://github.com/s-r-e-e-r-a-j\033[0m")
+    
 def receive_messages(sock):
     while True:
         try:
