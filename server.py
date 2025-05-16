@@ -55,7 +55,7 @@ def banner():
                             Developer: Sreeraj
 
           """)
-    print("\033[92m* GitHub : https://github.com/s-r-e-e-r-a-j\033[0m\n")
+    print("\033[92m  * GitHub : https://github.com/s-r-e-e-r-a-j\033[0m\n")
 
 def start_serveo_forwarding(bind_ip, port):
     print(f"{GREEN}[*] Starting Serveo tunnel...{RESET}")
