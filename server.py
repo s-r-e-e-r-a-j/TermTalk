@@ -42,7 +42,7 @@ def decrypt_message(enc_message):
 
 def banner():
     print("\033[92m")
-    print("""
+    print(r"""
              ===  Chatroom Server ===
        _______               _______    _ _    
       |__   __|             |__   __|  | | |   
