@@ -32,7 +32,7 @@ def decrypt_message(enc_message):
 
 def banner():
     print("\033[92m")
-    print("""
+    print(r"""
        _______               _______    _ _    
       |__   __|             |__   __|  | | |   
          | | ___ _ __ _ __ ___ | | __ _| | | __
