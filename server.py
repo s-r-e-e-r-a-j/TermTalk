@@ -41,7 +41,8 @@ def decrypt_message(enc_message):
         return "[!] Decryption Failed"
 
 def banner():
-    print("""\033[92m
+    print("\033[92m")
+    print("""
              ===  Chatroom Server ===
        _______               _______    _ _    
       |__   __|             |__   __|  | | |   
@@ -53,8 +54,9 @@ def banner():
 
                             Developer: Sreeraj
 
-      GitHub:https://github.com/s-r-e-e-r-a-j 
-      \033[0m""")
+       
+          """)
+    print("\033[92m* GitHub : https://github.com/s-r-e-e-r-a-j\033[0m")
 
 def start_serveo_forwarding(bind_ip, port):
     print(f"{GREEN}[*] Starting Serveo tunnel...{RESET}")
