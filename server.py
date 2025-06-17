@@ -1,4 +1,5 @@
 
+import sys
 
 try:
     try:
@@ -7,14 +8,14 @@ try:
     except ImportError:
             from Cryptodome.Cipher import AES
             from Cryptodome.Util.Padding import pad, unpad
-except Exception as e:
-       print(f"Error:{e}")
+except ImportError:
+       print("please install required library pycryptodome")
+       sys.exit(1)
     
 import socket
 import threading
 import subprocess
 import os
-import sys
 import base64
 import hashlib
 
