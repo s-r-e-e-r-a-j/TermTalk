@@ -1,8 +1,18 @@
+
+
+try:
+    try:
+        from Crypto.Cipher import AES
+        from Crypto.Util.Padding import pad, unpad
+    except ImportError:
+            from Cryptodome.Cipher import AES
+            from Cryptodome.Util.Padding import pad, unpad
+except Exception as e:
+       print(f"Error:{e}")
+    
 import socket
 import threading
 import time
-from Crypto.Cipher import AES
-from Crypto.Util.Padding import pad, unpad
 import base64
 import hashlib
 
