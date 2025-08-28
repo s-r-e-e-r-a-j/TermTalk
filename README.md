@@ -31,6 +31,16 @@
   ```bash
   pip3 install pycryptodome
   ```
+  **Note for Kali, Parrot, Ubuntu 23.04+ users:**
+
+If you see an error like:
+```go
+error: externally-managed-environment
+```
+then use:
+```bash
+pip3 install pycryptodome --break-system-packages
+```
 ## How to Use
 
 **1. On the Server**
