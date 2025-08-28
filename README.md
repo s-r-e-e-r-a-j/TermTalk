@@ -27,11 +27,11 @@
 
 - **PyCryptodome**  
   Required for AES encryption support. Install it using:
-  
-  ```bash
+
+```bash
   pip3 install pycryptodome
-  ```
-  **Note for Kali, Parrot, Ubuntu 23.04+ users:**
+```
+**Note for Kali, Parrot, Ubuntu 23.04+ users:**
 
 If you see an error like:
 ```go
