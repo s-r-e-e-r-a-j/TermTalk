@@ -23,7 +23,7 @@
   Required to use Serveo and for general network communication between clients and servers.
 
 - **Linux or Termux**  
-  Works on various Linux distributions (e.g., Debian, RedHat, Arch) and Termux (for Android).
+  Works on various Linux distributions (e.g., Debian, RHEL, Arch) and Termux (for Android).
 
 - **PyCryptodome**  
   Required for AES encryption support. Install it using:
