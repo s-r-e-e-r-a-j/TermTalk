@@ -90,3 +90,5 @@ Enter Server Port: 12345
 Enter The Secret Key (e.g., MyKey1234): MyKey1234
 Your nickname: allah
 ```
+## License
+This project is licensed under the MIT License
