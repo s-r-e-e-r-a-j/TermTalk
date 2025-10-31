@@ -90,10 +90,3 @@ Enter Server Port: 12345
 Enter The Secret Key (e.g., MyKey1234): MyKey1234
 Your nickname: allah
 ```
-
-## Developer
-- Sreeraj
-- GitHub: https://github.com/s-r-e-e-r-a-j
-
-  
-
